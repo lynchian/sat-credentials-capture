@@ -1,0 +1,23 @@
+{
+  "name": "sat-credentials-capture",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Capture SAT RFC + password and store encrypted in Supabase Postgres",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "sat",
+    "cfdi",
+    "credentials"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}

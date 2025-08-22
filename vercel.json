@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/credentials", "dest": "/api/credentials.js" },
+    { "src": "/health", "dest": "/api/health.js" },
+    { "handle": "filesystem" },
+    { "src": "/", "dest": "/public/index.html" },
+    { "src": "/success.html", "dest": "/public/success.html" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}
+
+
