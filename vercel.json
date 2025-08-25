@@ -7,9 +7,11 @@
   "routes": [
     { "src": "/api/credentials", "dest": "/api/credentials.js" },
     { "src": "/health", "dest": "/api/health.js" },
+    { "src": "/api/upload-fiel", "dest": "/api/upload-fiel.js" },
     { "handle": "filesystem" },
     { "src": "/", "dest": "/public/index.html" },
     { "src": "/success.html", "dest": "/public/success.html" },
+    { "src": "/upload", "dest": "/public/upload.html" },
     { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
